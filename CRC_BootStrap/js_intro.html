@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to JavaScript</h1>
+    <p>This is a paragraph</p>
+    <p id="ans">Answer = </p>
+    <script>
+        let a =10;
+        let b = 20;
+        console.log(a,b);
+        document.write("this is written by js using write()");
+        let return_var = document.getElementById("ans")  // return_var is [object HTMLParagraphElement]
+        console.log("return_var is " +return_var);
+        
+        document.getElementById("ans").innerHTML = "1256"
+        document.getElementById("ans").innerHTML = "Answer is " + (a+b)
+    
+        // let p = prompt("Please enter your name : ");
+        let alert = alert("This is an alert ");
+    
+    
+    
+    
+    
+    </script>
+</body>
+</html>

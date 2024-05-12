@@ -1,0 +1,90 @@
+[
+    {
+        "label": "smtplib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "smtplib",
+        "description": "smtplib",
+        "detail": "smtplib",
+        "documentation": {}
+    },
+    {
+        "label": "MIMEMultipart",
+        "importPath": "email.mime.multipart",
+        "description": "email.mime.multipart",
+        "isExtraImport": true,
+        "detail": "email.mime.multipart",
+        "documentation": {}
+    },
+    {
+        "label": "MIMEText",
+        "importPath": "email.mime.text",
+        "description": "email.mime.text",
+        "isExtraImport": true,
+        "detail": "email.mime.text",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "send_email",
+        "kind": 2,
+        "importPath": "del",
+        "description": "del",
+        "peekOfCode": "def send_email(sender_email, sender_password, receiver_email, subject, body):\n    # Set up the SMTP server\n    smtp_server = \"smtp.gmail.com\"\n    smtp_port = 587\n    # Create a message\n    message = MIMEMultipart()\n    message[\"From\"] = sender_email\n    message[\"To\"] = receiver_email\n    message[\"Subject\"] = subject\n    # Attach the body to the email",
+        "detail": "del",
+        "documentation": {}
+    },
+    {
+        "label": "sender_email",
+        "kind": 5,
+        "importPath": "del",
+        "description": "del",
+        "peekOfCode": "sender_email = \"ajdjango3@gmail.com\"\n# sender_password = \"hrzr jtbj kasb svsl\"\nsender_password = \"#aj_django@123\"\nreceiver_email = \"aakashjha343@gmail.com\"\nsubject = \"Daily Report - \" + datetime.datetime.now().strftime(\"%Y-%m-%d\")\nbody = \"This is the daily report.\\n\\nRegards,\\nYour Name\"\n# Send the email\nsend_email(sender_email, sender_password, receiver_email, subject, body)",
+        "detail": "del",
+        "documentation": {}
+    },
+    {
+        "label": "sender_password",
+        "kind": 5,
+        "importPath": "del",
+        "description": "del",
+        "peekOfCode": "sender_password = \"#aj_django@123\"\nreceiver_email = \"aakashjha343@gmail.com\"\nsubject = \"Daily Report - \" + datetime.datetime.now().strftime(\"%Y-%m-%d\")\nbody = \"This is the daily report.\\n\\nRegards,\\nYour Name\"\n# Send the email\nsend_email(sender_email, sender_password, receiver_email, subject, body)",
+        "detail": "del",
+        "documentation": {}
+    },
+    {
+        "label": "receiver_email",
+        "kind": 5,
+        "importPath": "del",
+        "description": "del",
+        "peekOfCode": "receiver_email = \"aakashjha343@gmail.com\"\nsubject = \"Daily Report - \" + datetime.datetime.now().strftime(\"%Y-%m-%d\")\nbody = \"This is the daily report.\\n\\nRegards,\\nYour Name\"\n# Send the email\nsend_email(sender_email, sender_password, receiver_email, subject, body)",
+        "detail": "del",
+        "documentation": {}
+    },
+    {
+        "label": "subject",
+        "kind": 5,
+        "importPath": "del",
+        "description": "del",
+        "peekOfCode": "subject = \"Daily Report - \" + datetime.datetime.now().strftime(\"%Y-%m-%d\")\nbody = \"This is the daily report.\\n\\nRegards,\\nYour Name\"\n# Send the email\nsend_email(sender_email, sender_password, receiver_email, subject, body)",
+        "detail": "del",
+        "documentation": {}
+    },
+    {
+        "label": "body",
+        "kind": 5,
+        "importPath": "del",
+        "description": "del",
+        "peekOfCode": "body = \"This is the daily report.\\n\\nRegards,\\nYour Name\"\n# Send the email\nsend_email(sender_email, sender_password, receiver_email, subject, body)",
+        "detail": "del",
+        "documentation": {}
+    }
+]
