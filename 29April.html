@@ -1,60 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <!-- <form action=""> -->
-      <p>Wap to check a given number is even or odd</p>
-      <input type="text" placeholder="Enter any value" id="t1" required />
-      <button id="checkButton" onclick="checkNum()">Check</button>
-      <h3 id="ans"></h3>
-    <!-- </form> -->
 
-    <p>Wap to find the largest among three numbers </p>
-    <input type="number" placeholder="Enter first number " id="t1">
-    <input type="number" placeholder="Enter second number " id="t2">
-    <input type="number" placeholder="Enter third number " id="t3">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
 
-    <button onclick="findLargest()">Find Largest Number</button>
-    
-    <br><br>
-    <h4 id="LargestResult">Largest is</h4>
+<body>
+  <!-- <form action=""> -->
+  <p>Wap to check a given number is even or odd</p>
+  <input type="text" placeholder="Enter any value" id="t1" required />
+  <button id="checkButton" onclick="checkNum()">Check</button>
+  <h3 id="ans"></h3>
+  <!-- </form> -->
 
-    <script>
-      function checkNum() {
-        let num1 = document.getElementById("t1").value;
-        if (num1 % 2 == 0) {
-          document.getElementById("ans").innerHTML = `${num1} is Even`;
-        } else {
-          document.getElementById("ans").innerHTML = `${num1} is Odd`;
+  <p>Wap to find the largest among three numbers </p>
+  <input type="number" placeholder="Enter first number " id="t1">
+  <input type="number" placeholder="Enter second number " id="t2">
+  <input type="number" placeholder="Enter third number " id="t3">
+
+  <button onclick="findLargest()">Find Largest Number</button>
+
+  <br><br>
+  <h4 id="LargestResult">Largest is</h4>
+
+  <script>
+    function checkNum() {
+      let num1 = document.getElementById("t1").value;
+      if (num1 % 2 == 0) {
+        document.getElementById("ans").innerHTML = `${num1} is Even`;
+      } else {
+        document.getElementById("ans").innerHTML = `${num1} is Odd`;
+      }
+    }
+    document.addEventListener("keydown", function (event) {   //Submit the form by "Enter" key of the keyboard ........
+      if (event.key === "Enter") {
+        // Find the element with the id or class of your "Check" button
+        var checkButton = document.getElementById("checkButton"); // Replace "checkButton" with the actual id of your button
+        if (checkButton) {
+          // Trigger a click event on the button
+          checkButton.click();
         }
       }
-      document.addEventListener("keydown", function(event) {   //Submit the form by "Enter" key of the keyboard ........
-        if (event.key === "Enter") {
-          // Find the element with the id or class of your "Check" button
-          var checkButton = document.getElementById("checkButton"); // Replace "checkButton" with the actual id of your button
-          if (checkButton) {
-            // Trigger a click event on the button
-            checkButton.click();
-          }
-        }
-      });
+    });
 
-      function findLargest(){
-        let num1 = document.getElementById("t1").value;
-        let num2 = document.getElementById("t2").value;
-        let num3 = document.getElementById("t3").value;
-        if(num1 > num2 && num1 > num3){
-          document.getElementById("LargestResult").innerHTML = `${num1} is largest`;
-        }else if(num2 > num1 && num2 > num3){
-            document.getElementById("LargestResult").innerHTML = `${num2} is largest`;
-        }else{
-            document.getElementById("LargestResult").innerHTML = `${num3} is largest`;
-      }}
-      
-    </script>
-  </body>
+    function findLargest() {
+      let num1 = document.getElementById("t1").value;
+      let num2 = document.getElementById("t2").value;
+      let num3 = document.getElementById("t3").value;
+      if (num1 > num2 && num1 > num3) {
+        document.getElementById("LargestResult").innerHTML = `${num1} is largest`;
+      } else if (num2 > num1 && num2 > num3) {
+        document.getElementById("LargestResult").innerHTML = `${num2} is largest`;
+      } else {
+        document.getElementById("LargestResult").innerHTML = `${num3} is largest`;
+      }
+    }
+
+  </script>
+</body>
+
 </html>

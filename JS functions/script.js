@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-const functionSelect = document.getElementById("functionSelect");
-const inputsContainer = document.getElementById("inputs");
-const submitBtn = document.getElementById("submitBtn");
-const resultDiv = document.getElementById("result");
+  const functionSelect = document.getElementById("functionSelect");
+  const inputsContainer = document.getElementById("inputs");
+  const submitBtn = document.getElementById("submitBtn");
+  const resultDiv = document.getElementById("result");
   functionSelect.addEventListener("change", function () {
     const selectedValue = functionSelect.value;
     const numInputs = getNumberOfInputs(selectedValue);
