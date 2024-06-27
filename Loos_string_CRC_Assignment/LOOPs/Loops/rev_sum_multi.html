@@ -10,6 +10,7 @@
     <style>
         body {
             background-image: url("/LOOPs/Loops/image.png");
+            background-image: url("image.png");
             background-size: contain;
             background-position: center;
             display: grid;
@@ -22,7 +23,7 @@
     <nav class="d-flex justify-content-center align-items-center">
         <ul class="nav nav-tabs">
             <li class="nav-item">
-                <a class="nav-link text-white" aria-current="page" href="/LOOPs/Loops/rev_sum_multi.html">Home</a>
+                <a class="nav-link text-white" aria-current="page" href="/Loos_string_CRC_Assignment/LOOPs/Loops/rev_sum_multi.html">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link text-white" href="https://github.com/dataritz/2026cseaJavaScript/tree/main">CRC</a>
@@ -44,10 +45,10 @@
 
         <h3 class="text-center my-3 text-white">Reverse of Number</h3>
         <input type="number" id="Input" class="form-control mb-3 w-50" placeholder="Enter a number">
-        <button onclick="cal()" class="btn btn-primary mb-3 w-25">Calculate</button>
+        <button onclick="cal()" class="btn btn-primary mb-3 w-25">Get reverse num</button>
         <h2 id="rev" class="mb-5"></h2>
         <br>
-        <h3 class="text-center my-3 text-white">Sum and Multiplication of digits</h3>
+        <h3 class="text-center my-3 text-white">Sum & Multiplication of digits</h3>
         <input type="number" id="I" class="form-control mb-3 w-50" placeholder="Enter a number">
         <button onclick="cal2()" class="btn btn-primary mb-3 w-25">Calculate</button>
         <h2 id="summul"></h2>
@@ -57,12 +58,12 @@
         function cal() {
             num = document.getElementById("Input").value;
             if (num > 0) {
-                let r = 0;
+                let rem = 0;
                 while (num !== 0) {
-                    r = (r * 10) + (num % 10);
+                    rem = (rem * 10) + (num % 10);
                     num = Math.floor(num / 10);
                 }
-                document.getElementById('rev').innerHTML = 'Reverse: ' + r;
+                document.getElementById('rev').innerHTML = 'Reverse: ' + rem;
                 document.getElementById("rev").style.color = 'white';
             } else {
                 document.getElementById('rev').innerHTML = "Please Enter number greater than 0";
