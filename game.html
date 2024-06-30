@@ -14,71 +14,69 @@
 
 <body>
   <div class="container mt-3">
-    <div class="row bg-primary text-center text-white">
-      <div class="col">
-        <h1>Welcome to my Game Show</h1>
+    <div class="row justify-content-center text-center text-white">
+      <div class="col-md-10 bg-primary">
+        <h1 class="m-4">Welcome to my Game Show</h1>
       </div>
     </div>
-    <div class="row mt-3">
-      <div class="col-md-4">  
-        <div class="card bg-danger">
+    <div class="row justify-content-center mt-3">
+      <div class=" col-md-5">
+        <div class="card bg-danger mt-2">
           <img src="https://github.com/dataritz/2026cseJavaScript/blob/main/image/otp.jpg?raw=true" class="card-img-top"
-            height="200px" alt="...">
-          <div class="card-body bg-warning">
+            height="250px" alt="OTP image">
+          <div class="card-body bg-warning text-center">
             <h5 class="card-title">OTP</h5>
-            <p class="card-text bg-danger text-white fs-2 text-center w-50 mx-auto " id="p1"></p>
-            <a href="#" class="btn btn-primary" onclick="otp()">OTP</a>
+            <p class="card-text bg-danger text-white text-center w-50 mx-auto" id="p1"></p>
+            <p href="#" class="btn btn-primary" onclick="otp()">OTP</p>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card bg-danger">
+      <div class=" col-md-5">
+        <div class="card bg-danger mt-2">
           <img src="https://m.media-amazon.com/images/I/41tCtZCa2QL._SY300_SX300_QL70_FMwebp_.jpg" class="card-img-top"
-            height="200px" alt="...">
-          <div class="card-body bg-warning">
+            height="250px" alt="DICE">
+          <div class="card-body bg-warning text-center">
             <h5 class="card-title">DICE</h5>
-            <p class="card-text bg-danger text-white fs-2 text-center w-50 mx-auto " id="p2"></p>
-            <a href="#" class="btn btn-primary" onclick="dice()">Get num from Dice </a>
+            <p class="card-text bg-danger text-white text-center w-50 mx-auto" id="p2"></p>
+            <p href="#" class="btn btn-primary" onclick="dice()">Get num from Dice</p>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card bg-danger">
-          <img src="https://github.com/dataritz/2026cseJavaScript/blob/main/image/rps.jpg?raw=true" class="card-img-top"
-            height="200px" alt="...">
-          <div class="card-body bg-warning">
-            <h5 class="card-title">Rock Paper Scissors</h5>
-            <p class="card-text bg-danger text-white fs-2 text-center w-50 mx-auto " id="p3"></p>
-            <a href="#" class="btn btn-primary" onclick="rps(1)">Rock</a>
-            <a href="#" class="btn btn-primary" onclick="rps(2)">Paper</a>
-            <a href="#" class="btn btn-primary" onclick="rps(3)">Scissor</a>
+    </div>
+    <div class="container mt-3">
+      <div class="row justify-content-center">
+        <div class=" col-md-5">
+          <div class="card bg-danger mt-2">
+            <img src="https://github.com/dataritz/2026cseJavaScript/blob/main/image/rps.jpg?raw=true"
+              class="card-img-top mt-10 " height="250px" alt="...">
+            <div class="card-body bg-warning text-center">
+              <h5 class="card-title">Rock Paper Scissors</h5>
+              <p class="card-text bg-danger text-white text-center w-50 mx-auto" id="p3"></p>
+              <p class="btn btn-primary" onclick="rps(1)">Rock</p>
+              <p class="btn btn-primary" onclick="rps(2)">Paper</p>
+              <p class="btn btn-primary" onclick="rps(3)">Scissor</p>
+            </div>
           </div>
-          <br>
-          <br>
-          <br>
+        </div>
+        <div class=" col-md-5">
+          <div class="card bg-danger mt-2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKWlmCeZYTO4k3Y4hqJFudqkMu8RxzhDyFjQ&s"
+              class="card-img-top" height="250px" alt="password gen image">
+            <div class="card-body bg-warning text-center">
+              <h5>Password Generator</h5>
+              <p class="card-text bg-danger text-white text-center w-50 mx-auto" id="password-result"></p>
+              <button class="btn btn-success mb-3" onclick="generatePassword()">Generate Password</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+  <br>
+  <br>
+  <br>
+  <br>
 
-  <div class="container mt-4">
-    <div class="row bg-primary text-center text-white">
-      <div class="col">
-        <div>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKWlmCeZYTO4k3Y4hqJFudqkMu8RxzhDyFjQ&s"
-            alt="">
-
-          <h3>Password Generator</h3>
-          <button class="btn btn-success" onclick="generatePassword()">Generate Password</button>
-          <p class="result  black" id="password-result"></p>
-          <hr>
-          <br>
-         
-          
-        </div>
-      </div>
-    </div>
-  </div>
 
   <script>
     function otp() {
@@ -98,12 +96,12 @@
         document.getElementById("p3").innerHTML = "User Win"
       }
       else
-        document.getElementById("p3").innerHTML = "computer Win"
+        document.getElementById("p3").innerHTML = "Comp. Win"
     }
-   
+
     function generatePassword() {
       var password = '';
-      var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+      var characters = '!@#$%^&*ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
       for (var i = 0; i < 8; i++) {
         password += characters.charAt(Math.floor(Math.random() * characters.length));
       }
